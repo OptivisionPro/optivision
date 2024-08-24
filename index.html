@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiVision - Inicio de Sesión</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2a045a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            width: device-width;           
+            background-color: #2a045a;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        @media (max-width:600px){
+            .container {
+                width: 100%;
+            }
+            .right-panel{
+                width: 0px;
+            }
+        }
+
+        .right-panel {
+            display: flex;
+            width: device-width;
+            background-color: #2a045a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .right-panel img{
+            display: flex;
+            justify-content: center;
+            width: device-width;
+            height: 515px;
+        }
+
+        .left-panel {
+            padding: 40px;
+            width: 50%;
+            background-color: #2a045a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .left-panel h1 {
+            color: #ff67c4;
+            margin-bottom: 10px;
+            justify-content: center;
+
+        }
+
+        .left-panel p {
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        .left-panel input[type="email"],
+        .left-panel input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .left-panel input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .left-panel a {
+            color: #ff67c4;
+            text-decoration-line: line-through;
+            
+        }
+
+        .left-panel .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #6f35ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .left-panel .btn.activision {
+            background-color: #ff67c4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-panel .btn.activision span {
+            margin-left: 10px;
+        }
+
+        .right-panel {
+            width: 50%;
+            background: url('tus_cubos_de_la_imagen.png') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>OPTIVISION</h1>
+            <p>Bienvenido a nuestra pagina</p>
+            
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Contraseña" required>
+                <label>
+                    <input type="checkbox"> Recuérdame
+                </label>
+                <button type="submit" class="btn">Ingresar</button>
+                <button type="button" class="btn activision">
+                    <span>Ingresar con Activision ID</span>
+                </button>
+                <br>¿No tienes cuenta? <a href="register.html">Registrarse</a>
+            </form>
+        </div>
+        <div class="right-panel">
+            <!-- Imagen decorativa -->
+            <img src="img/ghost.png">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        }
+    );
+    </script>
+</body>
+</html>
