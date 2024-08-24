@@ -15,7 +15,7 @@
 
 OptiVision es un sistema integral diseñado para optimizar la gestión de ventas y la administración interna de empresas de distribución y comercialización. Este proyecto, desarrollado en colaboración con **Activision Blizzard, Inc.**, tiene como objetivo ofrecer una plataforma innovadora y eficiente que permita una gestión fluida y precisa de los recursos y procesos empresariales.
 
-![OptiVision Logo](https://github.com/OptivisionPro/optivision/tree/gh-pages/assets/logo.png)
+![OptiVision Logo](https://raw.githubusercontent.com/OptivisionPro/optivision/gh-pages/assets/logo.png)
 
 ## Contexto Educativo
 
@@ -25,7 +25,7 @@ Este proyecto forma parte de un trabajo académico en el marco de la **Tecnicatu
 
 El proyecto OptiVision ha sido desarrollado en estrecha colaboración con **Activision Blizzard, Inc.**, una de las compañías de videojuegos más grandes del mundo. Esta colaboración ha permitido integrar soluciones tecnológicas de vanguardia, aplicando estándares de calidad y eficiencia propios de la industria del entretenimiento digital.
 
-![Activision Logo](https://github.com/OptivisionPro/optivision/tree/gh-pages/assets/activision_logo.png)
+![Activision Logo](https://raw.githubusercontent.com/OptivisionPro/optivision/gh-pages/assets/activision_logo.png)
 
 ## Características Principales
 
@@ -64,7 +64,7 @@ El proyecto OptiVision ha sido desarrollado en estrecha colaboración con **Acti
 
 La página web del proyecto está en desarrollo y servirá como portal central para acceder a la documentación, tutoriales y soporte técnico de OptiVision. Será un recurso clave para usuarios y administradores del sistema.
 
-![Página Web en Desarrollo](https://github.com/OptivisionPro/optivision/tree/gh-pages/assets/webpage_preview.png)
+![Página Web en Desarrollo](https://raw.githubusercontent.com/OptivisionPro/optivision/gh-pages/assets/webpage_preview.png)
 
 ## Anexos
 
