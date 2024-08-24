@@ -68,7 +68,7 @@ Se consultaron diversas fuentes de información y guías técnicas para el desar
 
 ## Contacto
 
-Para más información sobre el proyecto OptiVision, puedes contactarnos a través de [correo electrónico](mailto:contacto@optivision.com) o visitar nuestra [página web](https://www.optivision.com) (en desarrollo).
+Para más información sobre el proyecto OptiVision, puedes contactarnos a través de [correo electrónico](mailto:hugod.ies9012.com) o visitar nuestra [página web](https://optivisionpro.github.io/optivision/) (en desarrollo).
 
 ---
 
