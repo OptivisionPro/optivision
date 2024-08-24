@@ -1,22 +1,38 @@
-# optivision.github.io
-Proyecto Escolar: pagina web de "OptiVision"
+# OptiVision - Proyecto OptiVision
 
-# Proyecto OptiVision
+## Índice
+1. [Descripción del Proyecto](#descripción-del-proyecto)
+2. [Contexto Educativo](#contexto-educativo)
+3. [Colaboración con Activision Blizzard, Inc.](#colaboración-con-activision-blizzard-inc)
+4. [Características Principales](#características-principales)
+5. [Proceso de Desarrollo](#proceso-de-desarrollo)
+6. [Página Web del Proyecto](#página-web-del-proyecto)
+7. [Anexos](#anexos)
+8. [Bibliografía Consultada](#bibliografía-consultada)
+9. [Contacto](#contacto)
 
 ## Descripción del Proyecto
 
 OptiVision es un sistema integral diseñado para optimizar la gestión de ventas y la administración interna de empresas de distribución y comercialización. Este proyecto, desarrollado en colaboración con **Activision Blizzard, Inc.**, tiene como objetivo ofrecer una plataforma innovadora y eficiente que permita una gestión fluida y precisa de los recursos y procesos empresariales.
 
+![OptiVision Logo](https://optivisionpro.github.io/optivision/assets/logo.png)
+
+## Contexto Educativo
+
+Este proyecto forma parte de un trabajo académico en el marco de la **Tecnicatura Superior en Desarrollo de Software** en el IES 9-012, San Rafael, Mendoza. Su objetivo principal es aplicar los conocimientos adquiridos durante el curso para desarrollar una solución realista y funcional en el ámbito de la gestión empresarial. La colaboración con **Activision Blizzard, Inc.** ha sido parte de un ejercicio académico para simular un entorno profesional y aplicar las mejores prácticas en el desarrollo de software.
+
 ## Colaboración con Activision Blizzard, Inc.
 
 El proyecto OptiVision ha sido desarrollado en estrecha colaboración con **Activision Blizzard, Inc.**, una de las compañías de videojuegos más grandes del mundo. Esta colaboración ha permitido integrar soluciones tecnológicas de vanguardia, aplicando estándares de calidad y eficiencia propios de la industria del entretenimiento digital.
+
+![Activision Logo](https://optivisionpro.github.io/optivision/assets/activision_logo.png)
 
 ## Características Principales
 
 - **Gestión de Ventas:** Un módulo robusto que permite la administración detallada de ventas, inventarios y clientes, optimizando cada paso del proceso comercial.
 - **Análisis de Datos:** Herramientas de análisis avanzado que facilitan la toma de decisiones basadas en datos precisos y actualizados.
 - **Integración de Módulos:** Diseño modular que permite una fácil integración de nuevas funcionalidades según las necesidades de la empresa.
-- **Interface de Usuario:** Una interfaz intuitiva y amigable que mejora la experiencia del usuario y reduce el tiempo de adaptación al sistema.
+- **Interfaz de Usuario:** Una interfaz intuitiva y amigable que mejora la experiencia del usuario y reduce el tiempo de adaptación al sistema.
 
 ## Proceso de Desarrollo
 
@@ -46,21 +62,28 @@ El proyecto OptiVision ha sido desarrollado en estrecha colaboración con **Acti
 
 ## Página Web del Proyecto
 
-La página web del proyecto está en desarrollo y servirá como portal central para acceder a la documentación, tutoriales, y soporte técnico de OptiVision. Será un recurso clave para usuarios y administradores del sistema.
+La página web del proyecto está en desarrollo y servirá como portal central para acceder a la documentación, tutoriales y soporte técnico de OptiVision. Será un recurso clave para usuarios y administradores del sistema.
+
+![Página Web en Desarrollo](https://optivisionpro.github.io/optivision/assets/webpage_preview.png)
 
 ## Anexos
 
-### Anexo 1: **[Proceso de Implementación](./anexos/anexo1.pdf)**
+### Anexo 1: **[Presentación de Equipo y Proyecto OptiVision](./anexos/anexo1.pdf)**
 
-Este anexo detalla el plan de implementación, incluyendo el cronograma de actividades, los recursos necesarios, y los riesgos identificados.
+El ANEXO 1 presenta al equipo de OptiVision, una empresa dedicada al mantenimiento de servidores de videojuegos. El equipo está compuesto por profesionales altamente capacitados en diversas áreas, incluyendo dirección de proyectos, arquitectura de software, análisis de mercado, experiencia de usuario e ingeniería de pruebas.
 
-### Anexo 2: **[Evaluación de la Eficiencia y Eficacia](./anexos/anexo2.pdf)**
+OptiVision se destaca por su enfoque en la calidad del servicio y la atención al cliente, ofreciendo soluciones innovadoras y eficientes para optimizar la experiencia de juego. OptiVision busca expandirse y adaptarse a las tendencias emergentes en la industria de los videojuegos.
 
-Se describen los métodos utilizados para evaluar la eficiencia y eficacia del sistema OptiVision, incluyendo métricas cuantitativas y cualitativas.
+### Anexo 2: **[Descripción del Proyecto OptiVision](./anexos/anexo2.pdf)**
 
-### Anexo 3: **[Requerimientos Técnicos](./anexos/anexo3.pdf)**
+OptiVision es una empresa argentina dedicada al mantenimiento, optimización e innovación de servidores para Activision en Argentina. Nuestro objetivo es mejorar el rendimiento, reducir el lag y el ping en los videojuegos de nuestro cliente, asegurando una experiencia de juego fluida para los usuarios locales. Implementamos servidores en Mendoza y utilizamos tecnología de última generación para ofrecer un servicio confiable y eficiente, cumpliendo con todas las normativas legales y ambientales vigentes.
 
-Documentación técnica que especifica los requisitos de hardware y software necesarios para la correcta implementación y funcionamiento del sistema.
+### Anexo 3: **[Organización y Gestión de Proyectos en OptiVision](./anexos/anexo3.pdf)**
+
+- **Especificaciones Funcionales:** Definición de funciones macro y micro, incluyendo ejemplos avanzados como análisis financiero complejo y personalización a gran escala.
+- **Funciones Macro:** Detalles sobre cómo las macros pueden automatizar tareas repetitivas, mejorar la precisión y consistencia, y facilitar la toma de decisiones.
+- **Comunicación:** Importancia de la comunicación clara y concisa en el equipo, incluyendo actas de reunión y documentos colaborativos.
+- **Herramientas:** Uso de herramientas como encuestas en línea y WhatsApp para mejorar la comunicación y colaboración.
 
 ## Bibliografía Consultada
 
@@ -68,9 +91,8 @@ Se consultaron diversas fuentes de información y guías técnicas para el desar
 
 ## Contacto
 
-Para más información sobre el proyecto OptiVision, puedes contactarnos a través de [correo electrónico](mailto:hugod.ies9012.com) o visitar nuestra [página web](https://optivisionpro.github.io/optivision/) (en desarrollo).
+Para más información sobre el proyecto OptiVision, puedes contactarnos a través de [correo electrónico](mailto:hugod.ies9012@gmail.com) o visitar nuestra [página web](https://optivisionpro.github.io/optivision/) (en desarrollo).
 
 ---
 
 © 2024 OptiVision. Todos los derechos reservados.
-
