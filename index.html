@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
     <title>OptiVision - Inicio de Sesión</title>
     <style>
         body {
@@ -25,14 +25,6 @@
             overflow: hidden;
         }
 
-        @media (max-width:600px){
-            .container {
-                width: 100%;
-            }
-            .right-panel{
-                width: 0px;
-            }
-        }
 
         .right-panel {
             display: flex;
@@ -116,6 +108,17 @@
             width: 50%;
             background: url('tus_cubos_de_la_imagen.png') no-repeat center center;
             background-size: cover;
+        }
+        @media (max-width:600px){
+            .container {
+                width: 100%;
+            }
+            .right-panel{
+                display:none;
+            }
+            .left-panel {
+                width:100%;
+            }
         }
     </style>
 </head>
