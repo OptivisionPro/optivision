@@ -1,0 +1,289 @@
+/* Reglas generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2C0D4E;
+    color: #fff;
+}
+
+/* Contenedor */
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(135deg, #3A0A64 25%, #310a53 50%, #3A0A64 75%);
+    background-size: 40px 40px;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 40px; }
+}
+
+/* Barra lateral */
+.sidebar {
+    position:relative; 
+    top: -444px;
+    left: 1px;
+    width: 250px;
+    height: 500px;
+    background-color: #000000b7;
+    padding: 10px;
+    border-radius: 0 15px 15px 0;
+    border-style: groove;
+    border-color: #A10D90;
+   }
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+    border-style: double;
+    border: #A10D90;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #5B2686;
+    border-radius: 5px;
+    border-style: double;
+    border: #A10D90;
+}
+
+.sidebar nav ul li.premium a {
+    background: linear-gradient(to right, #edb443, #ffb31c);
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border-style: double;
+    border: #A10D90;
+}
+
+.sidebar nav ul li.premium:active {
+    transform: scale(0.95);
+    border-style: double;
+    border: #A10D90;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #3A0A64;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-bar .notifications img {
+    margin-left: 10px;
+}
+
+/* Noticias, música y juegos */
+.news, .recommended-music, .top-games {
+    padding: 10px;
+    width: 90%;
+}
+
+.news-cards, .music-cards, .games-cards {
+    display: flex;
+    gap: 1%;
+    width: 90%;
+    flex-wrap: wrap; /* Ajuste flexible en pantallas pequeñas */
+}
+
+/* Tarjetas */
+.news-card, .game-card {
+    background-color: #5B2686;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 200px; /* Flexibilidad en el tamaño de las tarjetas */
+    margin-bottom: 10px; /* Espaciado entre tarjetas */
+}
+
+.music-card {
+    background-color: #5B2686;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 150px; /* Ajusta la flexibilidad */
+    margin-bottom: 10px;
+}
+
+/* Tamaños fijos para imágenes */
+.news-card img, .game-card img, .music-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Lista de amigos */
+.friends-list {
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    width: 220px;
+    height: auto;
+    background-color: #1e0434d7;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(208, 0, 255, 0.766);
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.friends-toggle {
+    background-color: #740ab692;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.friends-toggle h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.friends-container {
+    display: none;
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.friends-list.open .friends-container {
+    display: block;
+    max-height: 300px;
+    padding: 10px;
+}
+
+.friends-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.friends-list ul li {
+    padding: 8px;
+    background-color: #5B2686;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #3A0A64;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .news-card, .game-card, .music-card {
+        flex: 1 1 100%; /* Se ajustan al 100% del ancho */
+        margin-bottom: 10px;
+        
+    align-items: center
+    }
+
+    .friends-list {
+        right: 10px;
+    }
+
+    .friends-list ul li {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-bar {
+        width: 100%; /* Asegura que la barra de búsqueda ocupe todo el ancho */
+        padding: 5px;
+    }
+
+    .news-cards, .music-cards {
+        display:flex;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap; /* Ajuste flexible en pantallas pequeñas */
+    }
+
+    .games-cards {
+        width: 70%;
+        height: 100%;
+        flex-wrap: wrap; /* Ajuste flexible en pantallas pequeñas */
+    }
+
+    .news-card img, .game-card img, .music-card img {
+        height: 70%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}

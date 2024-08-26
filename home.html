@@ -1,233 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OptiVision - Menu</title>
-    <link rel="stylesheet" type="home.css" href="URL" />
-  </head>
-  <style>
-    body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #2a045a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
-}
+<html lang="es">
 
-.container {
-    background-color: #414141;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+    <title>OptiVision</title>
+    <link rel="stylesheet" href="home/styles.css">
+</head>
 
-@keyframes bounce {
-
-    0%,
-    100% {
-        translate: 0px 36px;
+<script id="chatBroEmbedCode">
+    /* Chatbro Widget Embed Code Start */
+    function ChatbroLoader(chats, async) {
+        async = !1 !== async;
+        var params = {
+                embedChatsParameters: chats instanceof Array ? chats : [chats],
+                lang: navigator.language || navigator.userLanguage,
+                needLoadCode: 'undefined' == typeof Chatbro,
+                embedParamsVersion: localStorage.embedParamsVersion,
+                chatbroScriptVersion: localStorage.chatbroScriptVersion
+            },
+            xhr = new XMLHttpRequest;
+        xhr.withCredentials = !0, xhr.onload = function () {
+            eval(xhr.responseText)
+        }, xhr.onerror = function () {
+            console.error('Chatbro loading error')
+        }, xhr.open('GET', 'https://www.chatbro.com/embed.js?' + btoa(unescape(encodeURIComponent(JSON.stringify(
+            params)))), async), xhr.send()
     }
+    /* Chatbro Widget Embed Code End */
+    ChatbroLoader({
+        encodedChatId: '68zFD'
+    });
+</script>
 
-    50% {
-        translate: 0px 46px;
-    }
-}
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>OptiVision</h1>
+            <nav>
+                <ul>
+                    <li><a href="#news">Inicio</a></li>
+                    <li><a href="#top-games">Top Juegos</a></li>
+                    <li><a href="#">Saved games</a></li>
+                    <li><a href="#recommended-music">Musica</a></li>
+                    <li class="premium"><a href="#">¡Desbloquea funciones Premium ahora y disfruta de ventajas
+                            adicionales!</a></li>
+                    <li><a href="#">Configuraion</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-@keyframes bounce2 {
+        <main>
+            <header class="search-bar">
+                <input type="text" placeholder="Ingresa tu juego favorito">
+                <div class="notifications">
+                    <img src="notifications-icon.png" alt="Notificaciones">
+                </div>
+            </header>
 
-    0%,
-    100% {
-        translate: 0px 46px;
-    }
+            <section class="news" id="news">
+                <h2>Nuevas noticias del mundo</h2>
+                <div class="news-cards">
+                    <div class="news-card" onclick="openPage('home/noticias/Planes.html')">
+                        <img src="home/noticias/planes.png" alt="Planes">
+                        <p>Estos son los increíbles precios con los que puedes obtener nuestros servicios</p>
+                        <span>By OptiVision</span>
+                    </div>
+                    <div class="news-card" onclick="openPage('home/noticias/futuro.html')">
+                        <img src="home/noticias/juegos.jpg" alt="noticia 1">
+                        <p>El Futuro De Los Videojuegos: Anuncios de Activision para los próximos 5 años</p>
+                        <span>By Micaela Martínez</span>
+                    </div>
+                    <div class="news-card" onclick="openPage('home/noticias/mantenimiento.html')">
+                        <img src="home/noticias/juegos-opti.png" alt="Noticia 2">
+                        <p>¿Cuáles son los juegos a los que OptiVision ofrece mantenimiento?</p>
+                        <span>By Hugo Olguín</span>
+                    </div>
+                </div>
+            </section>
 
-    50% {
-        translate: 0px 56px;
-    }
-}
+            <section class="recommended-music" id="recommended-music">
+                <h2>Musica recomendada</h2>
+                <div class="music-cards">
+                    <div class="music-card" onclick="playMusic('home/musica/get-lucky.mp3')">
+                        <img src="home/musica/get-lucky.jpeg" alt="Get Lucky - Daft Punk">
+                        <p>Get Lucky <br>- Daft Punk</p>
+                    </div>
+                    <div class="music-card" onclick="playMusic('home/musica/tame-impala.mp3')">
+                        <img src="home/musica/tame-impala.jpeg" alt="New person same old mistakes - Tame Impala">
+                        <p>New person same old mistakes <br>- Tame Impala</p>
+                    </div>
+                </div>
+            </section>
 
-@keyframes umbral {
-    0% {
-        stop-color: #d3a5102e;
-    }
+            <section class="top-games" id="top-games">
+                <h2>Top Juegos</h2>
+                <div class="games-cards">
+                    <div class="game-card"> 
+                        <a href="https://www.callofduty.com/es/mobile" target="_blank">
+                        <img src="home/juegos/cod mobile.jpeg" alt="COD Mobile">
+                        </a>
+                        <p>COD Mobile</p>
+                    </div>
 
-    50% {
-        stop-color: rgba(211, 165, 16, 0.519);
-    }
+                    <div class="game-card">
+                        <a href="https://store.steampowered.com/app/731490/Crash_Bandicoot_N_Sane_Trilogy/?l=spanish" target="_blank"></a>
+                        <img src="home/juegos/crash.jpeg" alt="Crash Bandicoot Remastered">
+                    </a>
+                    <p>Crash Bandicoot Remastered</p>
+                    </div>
+                    
+                    <div class="game-card">
+                        <a href="https://store.steampowered.com/app/996580/Spyro_Reignited_Trilogy/" target="_blank">
+                        <img src="home/juegos/spyro.jpeg" alt="Spyro Reignited Trilogy">
+                    </a>
+                    <p>Spyro Reignited Trilogy</p>
+                    </div>
 
-    100% {
-        stop-color: #d3a5102e;
-    }
-}
+                    <div class="game-card">
+                        <a href="https://www.callofduty.com/es/modernwarfare3" target="_blank">
+                        <img src="home/juegos/cod warfare.jpg" alt="Call of Duty: Modern Warfare 3">
+                    </a>
+                    <p>Call of Duty: Modern Warfare III</p>
+                    </div>
 
-@keyframes partciles {
+                    <div class="game-card">
+                        <a href="https://overwatch.blizzard.com/es-es/" target="_blank">
+                        <img src="home/juegos/Overwatch.jpg" alt="Overwatch">
+                    </a>
+                    <p>Overwatch</p>
+                    </div>
 
-    0%,
-    100% {
-        translate: 0px 16px;
-    }
+                    <div class="game-card">
+                        <a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/?l=spanish" target="_blank">
+                        <img src="home/juegos/Sekiro Shadows Die Twice.jpg" alt="Sekiro: Shadows Die Twice">
+                    </a>
+                    <p>Sekiro: Shadows Die Twice</p>
+                    </div>
 
-    50% {
-        translate: 0px 6px;
-    }
-}
+                    <div class="game-card">
+                        <a href="https://worldofwarcraft.blizzard.com/es-es/" target="_blank">
+                        <img src="home/juegos/World of Warcraft The War Within.jpeg" alt="World of Warcraft®: The War Within™">
+                    </a>
+                    <p>World of Warcraft®: The War Within™</p>
+                    </div>
 
-#particles {
-    animation: partciles 4s ease-in-out infinite;
-}
+                    <div class="game-card">
+                        <a href="https://www.callofduty.com/es/blackops6" target="_blank">
+                        <img src="home/juegos/cod bo 6.jpg" alt="Call of Duty Black Ops 6">
+                    </a>
+                    <p>Call of Duty Black Ops 6</p>
+                    </div>
 
-#animatedStop {
-    animation: umbral 4s infinite;
-}
+                </div>
+            </section>
+        </main>
 
-#bounce {
-    animation: bounce 4s ease-in-out infinite;
-    translate: 0px 36px;
-}
+        <aside class="friends-list">
+            <div class="friends-toggle" onclick="toggleFriendsList()">
+                <h2>Amigos</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <ul class="friends-container">
+                <li onclick="showFriendInfo('Hugo Olguín')">
+                    <span class="friend-name">Hugo Olguín</span>
+                    <span class="friend-status"> escuchando Tame Impala</span>
+                </li>
+                <li onclick="showFriendInfo('Arian Luzcak')">
+                    <span class="friend-name">Arian Luzcak</span>
+                    <span class="friend-status"> hablando con ChatGPT durante 9 horas seguidas</span>
+                </li>
+                <li onclick="showFriendInfo('Agustin Carbajal')">
+                    <span class="friend-name">Agustin Carbajal</span>
+                    <span class="friend-status"> ha dado like a tu color de piel</span>
+                </li>
+                <li onclick="showFriendInfo('Micaela Martinez')">
+                    <span class="friend-name">Micaela Martinez</span>
+                    <span class="friend-status"> intentando sobrevivir</span>
+                </li>
+                <li onclick="showFriendInfo('Martin Navarrete')">
+                    <span class="friend-name">Martin Navarrete</span>
+                    <span class="friend-status"> ??????????</span>
+                </li>
+            </ul>
+        </aside>
 
-#bounce2 {
-    animation: bounce2 4s ease-in-out infinite;
-    translate: 0px 46px;
-    animation-delay: 0.5s;
-}
-  </style>
-  <body>
-    <svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
-      <g style="order: -1">
-        <polygon
-          transform="rotate(45 100 100)"
-          stroke-width="1"
-          stroke="#d3a410"
-          fill="none"
-          points="70,70 148,50 130,130 50,150"
-          id="bounce"
-        ></polygon>
-        <polygon
-          transform="rotate(45 100 100)"
-          stroke-width="1"
-          stroke="#d3a410"
-          fill="none"
-          points="70,70 148,50 130,130 50,150"
-          id="bounce2"
-        ></polygon>
-        <polygon
-          transform="rotate(45 100 100)"
-          stroke-width="2"
-          stroke=""
-          fill="#414750"
-          points="70,70 150,50 130,130 50,150"
-        ></polygon>
-        <polygon
-          stroke-width="2"
-          stroke=""
-          fill="url(#gradiente)"
-          points="100,70 150,100 100,130 50,100"
-        ></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
-            <stop
-              style="stop-color: #1e2026; stop-opacity: 1"
-              offset="20%"
-            ></stop>
-            <stop
-              style="stop-color: #414750; stop-opacity: 1"
-              offset="60%"
-            ></stop>
-          </linearGradient>
-        </defs>
-        <polygon
-          transform="translate(20, 31)"
-          stroke-width="2"
-          stroke=""
-          fill="#b7870f"
-          points="80,50 80,75 80,99 40,75"
-        ></polygon>
-        <polygon
-          transform="translate(20, 31)"
-          stroke-width="2"
-          stroke=""
-          fill="url(#gradiente2)"
-          points="40,-40 80,-40 80,99 40,75"
-        ></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
-            <stop
-              style="stop-color: #d3a51000; stop-opacity: 1"
-              offset="20%"
-            ></stop>
-            <stop
-              style="stop-color: #d3a51054; stop-opacity: 1"
-              offset="100%"
-              id="animatedStop"
-            ></stop>
-          </linearGradient>
-        </defs>
-        <polygon
-          transform="rotate(180 100 100) translate(20, 20)"
-          stroke-width="2"
-          stroke=""
-          fill="#d3a410"
-          points="80,50 80,75 80,99 40,75"
-        ></polygon>
-        <polygon
-          transform="rotate(0 100 100) translate(60, 20)"
-          stroke-width="2"
-          stroke=""
-          fill="url(#gradiente3)"
-          points="40,-40 80,-40 80,85 40,110.2"
-        ></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
-            <stop
-              style="stop-color: #d3a51000; stop-opacity: 1"
-              offset="20%"
-            ></stop>
-            <stop
-              style="stop-color: #d3a51054; stop-opacity: 1"
-              offset="100%"
-              id="animatedStop"
-            ></stop>
-          </linearGradient>
-        </defs>
-        <polygon
-          transform="rotate(45 100 100) translate(80, 95)"
-          stroke-width="2"
-          stroke=""
-          fill="#ffe4a1"
-          points="5,0 5,5 0,5 0,0"
-          id="particles"
-        ></polygon>
-        <polygon
-          transform="rotate(45 100 100) translate(80, 55)"
-          stroke-width="2"
-          stroke=""
-          fill="#ccb069"
-          points="6,0 6,6 0,6 0,0"
-          id="particles"
-        ></polygon>
-        <polygon
-          transform="rotate(45 100 100) translate(70, 80)"
-          stroke-width="2"
-          stroke=""
-          fill="#fff"
-          points="2,0 2,2 0,2 0,0"
-          id="particles"
-        ></polygon>
-        <polygon
-          stroke-width="2"
-          stroke=""
-          fill="#292d34"
-          points="29.5,99.8 100,142 100,172 29.5,130"
-        ></polygon>
-        <polygon
-          transform="translate(50, 92)"
-          stroke-width="2"
-          stroke=""
-          fill="#1f2127"
-          points="50,50 120.5,8 120.5,35 50,80"
-        ></polygon>
-      </g>
-    </svg>
-    <h1>PROXIMAMENTE...</h1>
-  </body>
+
+        <div id="friend-info-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeFriendInfo()">&times;</span>
+                <div id="friend-info"></div>
+            </div>
+        </div>
+    </div>
+        <script src="home/script.js"></script>
+</body>
+
 </html>
