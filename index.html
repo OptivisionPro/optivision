@@ -7,8 +7,8 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #2a045a;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(to right, blue, rgb(141, 55, 199));
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,72 +16,78 @@
             color: white;
         }
 
-        .container {
+        .contenedor {
             display: flex;
-            width: device-width;           
-            background-color: #2a045a;
+            width: 50%;           
+            background-color: #00000033;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             overflow: hidden;
         }
 
 
-        .right-panel {
+        .panel-derecho {
             display: flex;
             width: device-width;
-            background-color: #2a045a;
             border-radius: 12px;
             overflow: hidden;
         }
 
-        .right-panel img{
+        .panel-derecho img{
             display: flex;
             justify-content: center;
             width: device-width;
             height: 515px;
         }
 
-        .left-panel {
+        .panel-izquierdo {
             padding: 40px;
             width: 50%;
-            background-color: #2a045a;
             border-radius: 12px;
             overflow: hidden;
         }
 
-        .left-panel h1 {
+        .panel-izquierdo h1 {
             color: #ff67c4;
             margin-bottom: 10px;
-            justify-content: center;
-
+            text-align: center;
         }
 
-        .left-panel p {
+        .panel-izquierdo p {
             margin-bottom: 30px;
             justify-content: center;
+            text-align: center;
         }
 
-        .left-panel input[type="email"],
-        .left-panel input[type="password"] {
+        .panel-izquierdo input[type="email"],
+        .panel-izquierdo input[type="password"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 8px;
             border: none;
             font-size: 16px;
+            background-color: #966dff39;
+            color: #fff;
+            border-style:initial;
         }
 
-        .left-panel input[type="checkbox"] {
+        .panel-izquierdo input[type="email"]:focus,
+        .panel-izquierdo input[type="password"]:focus {
+            outline: solid violet;
+        }
+
+        .panel-izquierdo input[type="checkbox"] {
             margin-right: 10px;
         }
 
-        .left-panel a {
+        .panel-izquierdo a {
             color: #ff67c4;
             text-decoration-line: line-through;
             
         }
 
-        .left-panel .btn {
+        .panel-izquierdo .btn {
             width: 100%;
             padding: 12px;
             margin-top: 20px;
@@ -93,21 +99,30 @@
             font-size: 18px;
         }
 
-        .left-panel .btn.activision {
+        .panel-izquierdo .btn.activision {
             background-color: #ff67c4;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .left-panel .btn.activision span {
+        .panel-izquierdo .btn.activision span {
             margin-left: 10px;
         }
 
-        .right-panel {
-            width: 50%;
-            background: url('tus_cubos_de_la_imagen.png') no-repeat center center;
-            background-size: cover;
+        
+        @media (max-width:800px){
+            .contenedor {
+                width: 90%;
+                text-align: center;
+            }
+            .panel-derecho{
+                display:none;
+            }
+            .panel-izquierdo {
+                width: 70%;
+                justify-content: center;
+            }
         }
         @media (max-width:600px){
             .container {
@@ -123,12 +138,12 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-panel">
+    <div class="contenedor">
+        <div class="panel-izquierdo">
             <h1>OPTIVISION</h1>
             <p>Bienvenido a nuestra pagina</p>
             
-            <form id="loginForm">
+            <form id="inicio-sesion">
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Contraseña" required>
                 <label>
@@ -138,17 +153,17 @@
                 <button type="button" class="btn activision">
                     <span>Ingresar con Activision ID</span>
                 </button>
-                <br>¿No tienes cuenta? <a href="register.html">Registrarse</a>
+                <br>¿No tienes cuenta? <a href="registro.html">Registrarse</a>
             </form>
         </div>
-        <div class="right-panel">
+        <div class="panel-derecho">
             <!-- Imagen decorativa -->
             <img src="img/ghost.png">
         </div>
     </div>
 
     <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
+        document.getElementById("inicio-sesion").addEventListener("submit", function(event) {
             event.preventDefault();
             window.location.href = "home.html";
         }
