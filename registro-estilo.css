@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, blue, rgb(141,55,199));;
+}
+.container {
+    width: 500px;
+    padding: 50px;
+    background: rgba(124, 21, 155, 0.445);
+    margin: auto;
+    margin-top: 160px;
+    border-radius: 10px;
+}
+.Titulo {
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(137, 43, 226, 0);
+    color: rgb(255, 0, 242);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.principal {
+    color: white;
+    
+}
+.Usuario,.Correo,.Contraseña,.Ccontraseña,.cuenta {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+input{
+    padding: 7px;
+    border-radius: 10px;
+    background: rgba(196, 36, 196, 0.4);
+    color: white;
+    border-style: inherit;
+}
+input:focus{
+    outline: solid violet;
+}
+.reg{
+    
+    align-items: center;
+}
+.button{
+    background: blueviolet;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 400px;
+    padding: 10px;
+}
+.cuenta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link{
+    color: violet;
+}
