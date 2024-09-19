@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="/home.html" method="POST">
+        <form action="C:\Users\Hugod\Downloads\optivision-gh-pages (1)\optivision-gh-pages\home.html" method="POST">
             <h2 class="Titulo">Registro</h2>
             <div class="principal">
                 <div class="Usuario">
@@ -36,5 +36,12 @@
             </div>
         </form>
     </div>
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita el envío del formulario
+        // Aquí puedes agregar validaciones adicionales si es necesario
+        window.location.href = 'home.html'; // Redirige a home.html
+    });
+</script>
 </body>
 </html>
