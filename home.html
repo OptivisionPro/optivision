@@ -34,17 +34,15 @@
 </script>
 
 <body>
-    <div class="container">
-        <aside class="sidebar">
+    <div class="contenedor">
+        <aside class="barra-lateral">
             <h1>OptiVision</h1>
             <nav>
                 <ul>
                     <li><a href="#news">Inicio</a></li>
                     <li><a href="#top-games">Top Juegos</a></li>
-                    <li><a href="#">Saved games</a></li>
                     <li><a href="#recommended-music">Musica</a></li>
-                    <li class="premium"><a href="#">¡Desbloquea funciones Premium ahora y disfruta de ventajas
-                            adicionales!</a></li>
+                    <li class="premium"><a href="#">¡Desbloquea funciones Premium ahora!</a></li>
                     <li><a href="#">Configuraion</a></li>
                     <li><a href="index.html">Sign out</a></li>
                 </ul>
@@ -52,10 +50,10 @@
         </aside>
 
         <main>
-            <header class="search-bar">
+            <header class="barra-busqueda">
                 <input type="text" placeholder="Ingresa tu juego favorito">
-                <div class="notifications">
-                    <img src="notifications-icon.png" alt="Notificaciones">
+                <div class="notificaciones">
+                    <p>🔔 Notificaciones</p>
                 </div>
             </header>
 
@@ -65,12 +63,12 @@
                     <div class="news-card" onclick="openPage('home/noticias/Planes.html')">
                         <img src="home/noticias/planes.png" alt="Planes">
                         <p>Estos son los increíbles precios con los que puedes obtener nuestros servicios</p>
-                        <span>By OptiVision</span>
+                        <span>By Arian Luszczak</span>
                     </div>
                     <div class="news-card" onclick="openPage('home/noticias/futuro.html')">
                         <img src="home/noticias/juegos.jpg" alt="noticia 1">
                         <p>El Futuro De Los Videojuegos: Anuncios de Activision para los próximos 5 años</p>
-                        <span>By Micaela Martínez</span>
+                        <span>By Agustin Carbajal</span>
                     </div>
                     <div class="news-card" onclick="openPage('home/noticias/mantenimiento.html')">
                         <img src="home/noticias/juegos-opti.png" alt="Noticia 2">
@@ -80,73 +78,73 @@
                 </div>
             </section>
 
-            <section class="recommended-music" id="recommended-music">
+            <section class="musica-recomendada" id="musica-recomendada">
                 <h2>Musica recomendada</h2>
-                <div class="music-cards">
-                    <div class="music-card" onclick="playMusic('home/musica/get-lucky.mp3')">
+                <div class="tarjetas-musica">
+                    <div class="musica" onclick="playMusic('home/musica/get-lucky.mp3')">
                         <img src="home/musica/get-lucky.jpeg" alt="Get Lucky - Daft Punk">
                         <p>Get Lucky <br>- Daft Punk</p>
                     </div>
-                    <div class="music-card" onclick="playMusic('home/musica/tame-impala.mp3')">
+                    <div class="musica" onclick="playMusic('home/musica/tame-impala.mp3')">
                         <img src="home/musica/tame-impala.jpeg" alt="New person same old mistakes - Tame Impala">
                         <p>New person same old mistakes <br>- Tame Impala</p>
                     </div>
                 </div>
             </section>
 
-            <section class="top-games" id="top-games">
+            <section class="top-juegos" id="top-juegos">
                 <h2>Top Juegos</h2>
-                <div class="games-cards">
-                    <div class="game-card"> 
+                <div class="tarjetas-juego">
+                    <div class="tarjeta-juego"> 
                         <a href="https://www.callofduty.com/es/mobile" target="_blank">
                         <img src="home/juegos/cod mobile.jpeg" alt="COD Mobile">
                         </a>
                         <p>COD Mobile</p>
                     </div>
 
-                    <div class="game-card">
+                    <div class="tarjeta-juego">
                         <a href="https://store.steampowered.com/app/731490/Crash_Bandicoot_N_Sane_Trilogy/?l=spanish" target="_blank"></a>
                         <img src="home/juegos/crash.jpeg" alt="Crash Bandicoot Remastered">
                     </a>
                     <p>Crash Bandicoot Remastered</p>
                     </div>
                     
-                    <div class="game-card">
+                    <div class="tarjeta-juego">
                         <a href="https://store.steampowered.com/app/996580/Spyro_Reignited_Trilogy/" target="_blank">
                         <img src="home/juegos/spyro.jpeg" alt="Spyro Reignited Trilogy">
                     </a>
                     <p>Spyro Reignited Trilogy</p>
                     </div>
 
-                    <div class="game-card">
+                    <div class="tarjeta-juego">
                         <a href="https://www.callofduty.com/es/modernwarfare3" target="_blank">
                         <img src="home/juegos/cod warfare.jpg" alt="Call of Duty: Modern Warfare 3">
                     </a>
                     <p>Call of Duty: Modern Warfare III</p>
                     </div>
 
-                    <div class="game-card">
+                    <div class="tarjeta-juego">
                         <a href="https://overwatch.blizzard.com/es-es/" target="_blank">
                         <img src="home/juegos/Overwatch.jpg" alt="Overwatch">
                     </a>
                     <p>Overwatch</p>
                     </div>
 
-                    <div class="game-card">
+                    <div class="tarjeta-juego">
                         <a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/?l=spanish" target="_blank">
                         <img src="home/juegos/Sekiro Shadows Die Twice.jpg" alt="Sekiro: Shadows Die Twice">
                     </a>
                     <p>Sekiro: Shadows Die Twice</p>
                     </div>
 
-                    <div class="game-card">
+                    <div class="tarjeta-juego">
                         <a href="https://worldofwarcraft.blizzard.com/es-es/" target="_blank">
                         <img src="home/juegos/World of Warcraft The War Within.jpeg" alt="World of Warcraft®: The War Within™">
                     </a>
                     <p>World of Warcraft®: The War Within™</p>
                     </div>
 
-                    <div class="game-card">
+                    <div class="tarjeta-juego">
                         <a href="https://www.callofduty.com/es/blackops6" target="_blank">
                         <img src="home/juegos/cod bo 6.jpg" alt="Call of Duty Black Ops 6">
                     </a>
@@ -157,40 +155,40 @@
             </section>
         </main>
 
-        <aside class="friends-list">
-            <div class="friends-toggle" onclick="toggleFriendsList()">
+        <aside class="lista-amigos">
+            <div class="abrir-amigos" onclick="abrirlistaamigos()">
                 <h2>Amigos</h2>
-                <span class="toggle-icon">+</span>
+                <span class="abriricono">+</span>
             </div>
-            <ul class="friends-container">
+            <ul class="contenedor-amigos">
                 <li onclick="showFriendInfo('Hugo Olguín')">
-                    <span class="friend-name">Hugo Olguín</span>
-                    <span class="friend-status"> escuchando Tame Impala</span>
+                    <span class="nombre-amigo">Hugo Olguín</span>
+                    <span class="estado-amigo"> escuchando Tame Impala</span>
                 </li>
                 <li onclick="showFriendInfo('Arian Luzcak')">
-                    <span class="friend-name">Arian Luzcak</span>
-                    <span class="friend-status"> hablando con ChatGPT durante 9 horas seguidas</span>
+                    <span class="nombre-amigo">Arian Luzcak</span>
+                    <span class="estado-amigo"> hablando con ChatGPT durante 9 horas seguidas</span>
                 </li>
                 <li onclick="showFriendInfo('Agustin Carbajal')">
-                    <span class="friend-name">Agustin Carbajal</span>
-                    <span class="friend-status"> ha dado like a tu color de piel</span>
+                    <span class="nombre-amigo">Agustin Carbajal</span>
+                    <span class="estado-amigo"> ha dado like a tu color de piel</span>
                 </li>
                 <li onclick="showFriendInfo('Micaela Martinez')">
-                    <span class="friend-name">Micaela Martinez</span>
-                    <span class="friend-status"> intentando sobrevivir</span>
+                    <span class="nombre-amigo">Micaela Martinez</span>
+                    <span class="estado-amigo"> intentando sobrevivir</span>
                 </li>
                 <li onclick="showFriendInfo('Martin Navarrete')">
-                    <span class="friend-name">Martin Navarrete</span>
-                    <span class="friend-status"> ??????????</span>
+                    <span class="nombre-amigo">Martin Navarrete</span>
+                    <span class="estado-amigo"> ??????????</span>
                 </li>
             </ul>
         </aside>
 
 
-        <div id="friend-info-modal" class="modal">
+        <div id="perfil-amigo" class="perfil">
             <div class="modal-content">
                 <span class="close" onclick="closeFriendInfo()">&times;</span>
-                <div id="friend-info"></div>
+                <div id="info-amigo"></div>
             </div>
         </div>
     </div>

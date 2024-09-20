@@ -7,7 +7,7 @@ body {
 }
 
 /* Contenedor */
-.container {
+.contenedor {
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@ body {
 }
 
 /* Barra lateral */
-.sidebar {
+.barra-lateral {
     position:relative; 
     top: -444px;
     left: 1px;
@@ -35,25 +35,17 @@ body {
     border-radius: 0 15px 15px 0;
     border-style: groove;
     border-color: #A10D90;
-   }
-
-.sidebar h1 {
+   } .barra-lateral h1 {
     font-size: 24px;
     margin-bottom: 20px;
-}
-
-.sidebar nav ul {
+} .barra-lateral nav ul {
     list-style: none;
     padding: 0;
-}
-
-.sidebar nav ul li {
+} .barra-lateral nav ul li {
     margin-bottom: 10px;
     border-style: double;
     border: #A10D90;
-}
-
-.sidebar nav ul li a {
+} .barra-lateral nav ul li a {
     color: #fff;
     text-decoration: none;
     display: block;
@@ -62,9 +54,7 @@ body {
     border-radius: 5px;
     border-style: double;
     border: #A10D90;
-}
-
-.sidebar nav ul li.premium a {
+} .barra-lateral nav ul li.premium a {
     background: linear-gradient(to right, #edb443, #ffb31c);
     color: #ffffff;
     border-radius: 10px;
@@ -72,40 +62,36 @@ body {
     transition: transform 0.5s;
     border-style: double;
     border: #A10D90;
-}
-
-.sidebar nav ul li.premium:active {
+} .barra-lateral nav ul li.premium:active {
     transform: scale(0.95);
     border-style: double;
     border: #A10D90;
 }
 
 /* Barra de búsqueda */
-.search-bar {
+.barra-busqueda {
     display: flex;
     align-items: center;
     padding: 10px;
     background-color: #3A0A64;
-}
-
-.search-bar input {
+} .barra-busqueda input {
     flex-grow: 1;
     padding: 10px;
     border-radius: 5px;
     border: none;
 }
 
-.search-bar .notifications img {
+.barra-busqueda .notificaciones {
     margin-left: 10px;
 }
 
 /* Noticias, música y juegos */
-.news, .recommended-music, .top-games {
+.news, .musica-recomendada, .top-juegos {
     padding: 10px;
     width: 90%;
 }
 
-.news-cards, .music-cards, .games-cards {
+.news-cards, .tarjetas-musica, .tarjetas-juego {
     display: flex;
     gap: 1%;
     width: 90%;
@@ -113,7 +99,7 @@ body {
 }
 
 /* Tarjetas */
-.news-card, .game-card {
+.news-card, .tarjeta-juego {
     background-color: #5B2686;
     padding: 10px;
     border-radius: 5px;
@@ -123,7 +109,7 @@ body {
     margin-bottom: 10px; /* Espaciado entre tarjetas */
 }
 
-.music-card {
+.tarjetas-musica {
     background-color: #5B2686;
     padding: 10px;
     border-radius: 5px;
@@ -134,7 +120,7 @@ body {
 }
 
 /* Tamaños fijos para imágenes */
-.news-card img, .game-card img, .music-card img {
+.news-card img, .tarjetas-juego img, .tarjetas-musica img {
     width: 100%;
     height: 200px;
     border-radius: 5px;
@@ -142,7 +128,7 @@ body {
 }
 
 /* Lista de amigos */
-.friends-list {
+.lista-amigos {
     position: fixed;
     bottom: 0;
     right: 80px;
@@ -155,7 +141,7 @@ body {
     z-index: 1000; /* Asegura que esté por encima del contenido */
 }
 
-.friends-toggle {
+.abrir-amigos {
     background-color: #740ab692;
     padding: 10px;
     cursor: pointer;
@@ -163,13 +149,13 @@ body {
     border-radius: 15px 15px 0 0;
 }
 
-.friends-toggle h2 {
+.abrir-amigos h2 {
     margin: 0;
     color: #fff;
     font-size: 18px;
 }
 
-.friends-container {
+.contenedor-amigos {
     display: none;
     padding: 10px;
     max-height: 0;
@@ -177,19 +163,19 @@ body {
     transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
-.friends-list.open .friends-container {
+.lista-amigos.open .contenedor-amigos {
     display: block;
     max-height: 300px;
     padding: 10px;
 }
 
-.friends-list ul {
+.lista-amigos ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.friends-list ul li {
+.lista-amigos ul li {
     padding: 8px;
     background-color: #5B2686;
     border-radius: 5px;
@@ -202,7 +188,7 @@ body {
 }
 
 /* Modal */
-.modal {
+.perfil {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -238,7 +224,7 @@ body {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .sidebar {
+    .barra-lateral {
         display: none;
     }
 

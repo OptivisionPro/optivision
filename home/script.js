@@ -10,7 +10,7 @@ function playMusic(file) {
 }
 
 function showFriendInfo(name) {
-    const info = document.getElementById("friend-info");
+    const info = document.getElementById("info-amigo");
     let content;
 
     switch (name) {
@@ -34,11 +34,11 @@ function showFriendInfo(name) {
     }
 
     info.innerHTML = content;
-    document.getElementById("friend-info-modal").style.display = "block";
+    document.getElementById("perfil-amigo").style.display = "block";
 }
 
 function closeFriendInfo() {
-    document.getElementById("friend-info-modal").style.display = "none";
+    document.getElementById("perfil-amigo").style.display = "none";
 }
 
 let currentAudio = null;
@@ -59,16 +59,16 @@ function playMusic(file) {
     }
 }
 
-function toggleFriendsList() {
-    const friendsList = document.querySelector('.friends-list');
-    const toggleIcon = document.querySelector('.toggle-icon');
+function abrirlistaamigos() {
+    const friendsList = document.querySelector('.lista-amigos');
+    const toggleIcon = document.querySelector('.icono-abrir');
 
     friendsList.classList.toggle('open');
 
     if (friendsList.classList.contains('open')) {
-        toggleIcon.textContent = '×'; // Cambia el ícono a una "X" cuando está abierto
+        toggleIcon.textContent = '-';
     } else {
-        toggleIcon.textContent = '+'; // Cambia el ícono a un "+" cuando está cerrado
+        toggleIcon.textContent = '+';
     }
 }
 
