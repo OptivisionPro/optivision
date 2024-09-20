@@ -83,7 +83,6 @@
 
         .panel-izquierdo a {
             color: #ff67c4;
-            text-decoration-line: line-through;
             
         }
 
@@ -97,6 +96,9 @@
             border-radius: 8px;
             cursor: pointer;
             font-size: 18px;
+        } .btn:hover {
+            background-color: #6f35ff;
+            box-shadow: #ff67c4 0 0 10px;
         }
 
         .panel-izquierdo .btn.activision {
@@ -106,10 +108,23 @@
             justify-content: center;
         }
 
-        .panel-izquierdo .btn.activision span {
-            margin-left: 10px;
+
+        .btn-registro {
+            width: 25%;
+            padding: 10px;
+            margin-top: 0px;
+            background-color: #f487ec77;
+            color: white;
+            border: none;
+            border-radius:100px;
+            cursor: pointer;
+            font-size: 15px;
+        } .btn-registro:hover {
+            background-color: #ffffff00;
         }
 
+
+        
         
         @media (max-width:800px){
             .contenedor {
@@ -142,14 +157,18 @@
                 <button type="button" class="btn activision">
                     <span>Ingresar con Activision ID</span>
                 </button>
-                <br>¿No tienes cuenta? <a href="registro.html">Registrarse</a>
             </form>
+            <br>¿No tienes cuenta? 
+            <a href="registro.html">Registrate</a>
+                
         </div>
         <div class="panel-derecho">
             <!-- Imagen decorativa -->
             <img src="img/ghost.png">
         </div>
     </div>
+
+    
 
     <script>
         document.getElementById("inicio-sesion").addEventListener("submit", function(event) {
