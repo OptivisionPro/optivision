@@ -61,3 +61,18 @@ input:focus{
 .link{
     color: violet;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .Usuario,.Correo,.Contraseña,.Ccontraseña,.cuenta {
+        padding: 5px;
+    }
+
+    .button {
+        width: 100%;
+    }
+    
+}
