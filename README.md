@@ -85,6 +85,14 @@ OptiVision es una empresa argentina dedicada al mantenimiento, optimización e i
 - **Comunicación:** Importancia de la comunicación clara y concisa en el equipo, incluyendo actas de reunión y documentos colaborativos.
 - **Herramientas:** Uso de herramientas como encuestas en línea y WhatsApp para mejorar la comunicación y colaboración.
 
+### Anexo 4: **[...](./anexos/anexo4.pdf)**
+
+- **...:** ...
+
+### Anexo 5: **[...](./anexos/anexo5.pdf)**
+
+- **...:** ...
+  
 ## Bibliografía Consultada
 
 Se consultaron diversas fuentes de información y guías técnicas para el desarrollo de este proyecto, asegurando el cumplimiento de las mejores prácticas en la industria. Para más detalles, consulta la sección de bibliografía en cada anexo.
