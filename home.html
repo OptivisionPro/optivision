@@ -40,9 +40,9 @@
             <nav>
                 <ul>
                     <li><a href="#news">Inicio</a></li>
-                    <li><a href="#top-games">Top Juegos</a></li>
-                    <li><a href="#recommended-music">Musica</a></li>
-                    <li class="premium"><a href="#">¡Desbloquea funciones Premium ahora!</a></li>
+                    <li><a href="#top-juegos">Top Juegos</a></li>
+                    <li><a href="#musica-recomendada">Musica</a></li>
+                    <li class="premium"><a href="home/noticias/planes.html">¡Desbloquea funciones Premium ahora!</a></li>
                     <li><a href="#">Configuraion</a></li>
                     <li><a href="index.html">Sign out</a></li>
                 </ul>
@@ -156,39 +156,108 @@
         </main>
 
         <aside class="lista-amigos">
-            <div class="abrir-amigos" onclick="abrirlistaamigos()">
+            <div class="abrir-amigos" onclick="toggleListaAmigos()">
                 <h2>Amigos</h2>
-                <span class="abriricono">+</span>
+                <span class="abrir-icono">+</span>
             </div>
             <ul class="contenedor-amigos">
-                <li onclick="showFriendInfo('Hugo Olguín')">
-                    <span class="nombre-amigo">Hugo Olguín</span>
-                    <span class="estado-amigo"> escuchando Tame Impala</span>
+                <li>
+                    <a href="#perfil-hugo" class="amigo-link">
+                        <img src="home/amigos/hugo.jpeg" alt="Hugo Olguín" class="foto-amigo">
+                        <div class="info-amigo">
+                            <span class="nombre-amigo">Hugo Olguín</span>
+                            <span class="estado-amigo">🎧 escuchando Tame Impala</span>
+                        </div>
+                    </a>
                 </li>
-                <li onclick="showFriendInfo('Arian Luzcak')">
-                    <span class="nombre-amigo">Arian Luzcak</span>
-                    <span class="estado-amigo"> hablando con ChatGPT durante 9 horas seguidas</span>
+                <li>
+                    <a href="#perfil-arian" class="amigo-link">
+                        <img src="home/amigos/arian.jpg" alt="Arian Luzcak" class="foto-amigo">
+                        <div class="info-amigo">
+                            <span class="nombre-amigo">Arian Luzcak</span>
+                            <span class="estado-amigo">💬 hablando con ChatGPT durante 9 horas seguidas</span>
+                        </div>
+                    </a>
                 </li>
-                <li onclick="showFriendInfo('Agustin Carbajal')">
-                    <span class="nombre-amigo">Agustin Carbajal</span>
-                    <span class="estado-amigo"> ha dado like a tu color de piel</span>
+                <li>
+                    <a href="#perfil-agustin" class="amigo-link">
+                        <img src="home/amigos/agus.jpg" alt="Agustin Carbajal" class="foto-amigo">
+                        <div class="info-amigo">
+                            <span class="nombre-amigo">Agustin Carbajal</span>
+                            <span class="estado-amigo">👍 ha dado like a tu color de piel</span>
+                        </div>
+                    </a>
                 </li>
-                <li onclick="showFriendInfo('Micaela Martinez')">
-                    <span class="nombre-amigo">Micaela Martinez</span>
-                    <span class="estado-amigo"> intentando sobrevivir</span>
+                <li>
+                    <a href="#perfil-micaela" class="amigo-link">
+                        <img src="home/amigos/mica.jpg" alt="Micaela Martinez" class="foto-amigo">
+                        <div class="info-amigo">
+                            <span class="nombre-amigo">Micaela Martinez</span>
+                            <span class="estado-amigo">☠️ intentando sobrevivir</span>
+                        </div>
+                    </a>
                 </li>
-                <li onclick="showFriendInfo('Martin Navarrete')">
-                    <span class="nombre-amigo">Martin Navarrete</span>
-                    <span class="estado-amigo"> ??????????</span>
+                <li>
+                    <a href="#perfil-martin" class="amigo-link">
+                        <img src="home/amigos/martin.jpg" alt="Martin Navarrete" class="foto-amigo">
+                        <div class="info-amigo">
+                            <span class="nombre-amigo">Martin Navarrete</span>
+                            <span class="estado-amigo">??????????</span>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </aside>
-
-
-        <div id="perfil-amigo" class="perfil">
+              
+        
+        
+        <div id="perfil-hugo" class="perfil">
             <div class="modal-content">
-                <span class="close" onclick="closeFriendInfo()">&times;</span>
-                <div id="info-amigo"></div>
+                <a href="#" class="close">×</a>
+                <img src="home/amigos/hugo.jpeg" alt="Hugo Olguín" class="foto-perfil">
+                <h2>Hugo Olguín</h2>
+                <p>escuchando Tame Impala</p>
+            </div>
+        </div>
+        
+        <div id="perfil-arian" class="perfil">
+            <div class="modal-content">
+                <a href="#" class="close">×</a>
+                <img src="home/amigos/arian.jpg" alt="Arian Luzcak" class="foto-perfil">
+                <h2>Arian Luzcak</h2>
+                <p>este wn tiene mas de 9 horas diarias registradas en ChatGPT
+                    <br>Necesita ayuda...
+                </p>
+            </div>
+        </div>
+        
+        <div id="perfil-agustin" class="perfil">
+            <div class="modal-content">
+                <a href="#" class="close">×</a>
+                <img src="home/amigos/agus.jpg" alt="Agustin Carbajal" class="foto-perfil">
+                <h2>Agustin Carbajal</h2>
+                <p>ha dado like a tu color de piel</p>
+            </div>
+        </div>
+        
+        <div id="perfil-micaela" class="perfil">
+            <div class="modal-content">
+                <a href="#" class="close">×</a>
+                <img src="home/amigos/mica.jpg" alt="Micaela Martinez" class="foto-perfil">
+                <h2>Micaela Martinez</h2>
+                <p>intentando sobrevivir</p>
+            </div>
+        </div>
+        
+        <div id="perfil-martin" class="perfil">
+            <div class="modal-content">
+                <a href="#" class="close">×</a>
+                <img src="home/amigos/martin.jpg" alt="Martin Navarrete" class="foto-perfil">
+                <h2>Martin Navarrete</h2>
+                <p>??????????</p>
+                <p>Uno de los fundadores de OptiVision... 
+                    <br> Su paradero es un completo misterio...
+                </p>
             </div>
         </div>
     </div>
