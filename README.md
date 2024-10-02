@@ -60,7 +60,8 @@ El proyecto OptiVision ha sido desarrollado en estrecha colaboración con **Acti
    - Migración de datos desde sistemas anteriores.
    - Verificación y validación de la integridad de los datos cargados.
 
-## Página Web del Proyecto
+## Página Web del Proyecto 
+**[Entra aquí](https://optivisionpro.github.io/optivision/)
 
 La página web del proyecto está en desarrollo y servirá como portal central para acceder a la documentación, tutoriales y soporte técnico de OptiVision. Será un recurso clave para usuarios y administradores del sistema.
 
@@ -85,13 +86,20 @@ OptiVision es una empresa argentina dedicada al mantenimiento, optimización e i
 - **Comunicación:** Importancia de la comunicación clara y concisa en el equipo, incluyendo actas de reunión y documentos colaborativos.
 - **Herramientas:** Uso de herramientas como encuestas en línea y WhatsApp para mejorar la comunicación y colaboración.
 
-### Anexo 4: **[...](./anexos/anexo4.pdf)**
+### Anexo 4: **[Programación y Planeación de Tareas](./anexos/anexo4.pdf)**
 
-- **...:** ...
+- **Etapas del Proyecto**: Descripción detallada de las etapas y tiempos estimados.
+- **Organización de Actividades**: Uso de MS Project para la planificación.
+- **Valorización Previa**: Cálculo de valores estimados parciales y totales.
+- **Listados e Informes**: Selección de datos para evaluación y optimización.
+- **Optimización de Diagrama Gantt**: Análisis y ajustes para optimizar recursos.
 
-### Anexo 5: **[...](./anexos/anexo5.pdf)**
+### Anexo 5: **[Estructura y Etapas de un Proyecto](./anexos/anexo5.pdf)**
 
-- **...:** ...
+- **Evaluación Cuantitativa y Cualitativa**: Se mide la actividad del servidor y la disponibilidad mediante indicadores como el porcentaje de uptime y la satisfacción del usuario.
+- **Satisfacción del Usuario**: Se evalúa antes y después de la implementación mediante encuestas y entrevistas.
+- **Facilidad de Mantenimiento**: Se mide la percepción del equipo de TI sobre la facilidad de mantenimiento de los nuevos servidores.
+- **Conclusiones y Recomendaciones**: El proyecto fue exitoso en términos de tiempo, disponibilidad, satisfacción del usuario y facilidad de mantenimiento. Se hará un monitoreo continuo, capacitación adicional y encuestas regulares.
   
 ## Bibliografía Consultada
 
