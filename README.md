@@ -4,16 +4,16 @@
 
 ## 📑 Índice
 
-1. [Descripción del Proyecto](#descripción-del-proyecto)
+1. [Descripción del Proyecto](#-descripción-del-proyecto)
 2. [Contexto Educativo](#contexto-educativo)
 3. [Colaboración con Activision Blizzard, Inc.](#colaboración-con-activision-blizzard-inc)
-4. [Características Principales](#características-principales)
-5. [Proceso de Desarrollo](#proceso-de-desarrollo)
-6. [Página Web del Proyecto](#página-web-del-proyecto)
+4. [Características Principales](#-características-principales)
+5. [Proceso de Desarrollo](#-proceso-de-desarrollo)
+6. [Página Web del Proyecto](#-página-web-del-proyecto)
 7. [Anexos](#anexos)
-8. [Contacto](#contacto)
-9. [Equipo de trabajo](#equipo-de-trabajo)
-10. [Información Académica](#informacion-academica)
+8. [Contacto](#-contacto)
+9. [Equipo de trabajo](#-equipo-de-trabajo)
+10. [Información Académica](#-información-académica)
 
 
 
@@ -139,7 +139,7 @@ o visitar nuestra [página web](https://optivisionpro.github.io/optivision/) (en
 
 ## 👥 Equipo de Trabajo
 
-- **Agustin Carbajal**: CEO
+- **Agustin Carbajal**: CEO.
 - **Hugo Olguin**: Manager (Producción), Diseñador UX/UI, Arquitecto de Software, Responsable de Infraestructura, Líder Técnico.
 - **Arian Luszczak**: Manager (Marketing), Especialista en Experiencia de Usuarios, Relaciones Públicas.
 
@@ -157,7 +157,7 @@ Queremos hacer una mención a dos personas que contribuyeron al proyecto pero qu
 - **Asignatura:** *Practicas Profesionalizantes I*
 - **Institución:** *IES 9-012 San Rafael, Mendoza*
 - **Carrera:** *Tecnicatura Superior en Desarrollo de Software*
-- **Profesora:** *Anabella Rothstein*
+- **Profesora:** *Anabella Rotschtein*
 ![Asignatura](https://raw.githubusercontent.com/OptivisionPro/optivision/gh-pages/assets/Asignatura.png)
 ---
 
