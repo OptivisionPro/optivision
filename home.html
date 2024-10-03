@@ -34,29 +34,26 @@
 </script>
 
 <body>
+    
     <div class="contenedor">
-        <aside class="barra-lateral">
-            <h1>OptiVision</h1>
-            <nav>
+
+        <header class="encabezado">
+            <div class="logo"><a href="home.html">OptiVision</a></div>
+            <input type="checkbox" id="toggle"> <!-- Checkbox para menú hamburguesa -->
+            <label for="toggle" class="menu-boton">☰</label> <!-- Botón hamburguesa -->
+            <nav class="navegacion">
                 <ul>
-                    <li><a href="#news">Inicio</a></li>
                     <li><a href="#top-juegos">Top Juegos</a></li>
-                    <li><a href="#musica-recomendada">Musica</a></li>
+                    <li><a href="#musica-recomendada">Música</a></li>
                     <li class="premium"><a href="home/noticias/planes.html">¡Desbloquea funciones Premium ahora!</a></li>
-                    <li><a href="#">Configuraion</a></li>
-                    <li><a href="index.html">Sign out</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="index.html">Salir</a></li>
                 </ul>
             </nav>
-        </aside>
+        </header>
+              
 
         <main>
-            <header class="barra-busqueda">
-                <input type="text" placeholder="Ingresa tu juego favorito">
-                <div class="notificaciones">
-                    <p>🔔 Notificaciones</p>
-                </div>
-            </header>
-
             <section class="news" id="news">
                 <h2>Nuevas noticias del mundo</h2>
                 <div class="news-cards">
@@ -81,11 +78,11 @@
             <section class="musica-recomendada" id="musica-recomendada">
                 <h2>Musica recomendada</h2>
                 <div class="tarjetas-musica">
-                    <div class="musica" onclick="playMusic('home/musica/get-lucky.mp3')">
+                    <div class="tarjeta-musica" onclick="playMusic('home/musica/get-lucky.mp3')">
                         <img src="home/musica/get-lucky.jpeg" alt="Get Lucky - Daft Punk">
                         <p>Get Lucky <br>- Daft Punk</p>
                     </div>
-                    <div class="musica" onclick="playMusic('home/musica/tame-impala.mp3')">
+                    <div class="tarjeta-musica" onclick="playMusic('home/musica/tame-impala.mp3')">
                         <img src="home/musica/tame-impala.jpeg" alt="New person same old mistakes - Tame Impala">
                         <p>New person same old mistakes <br>- Tame Impala</p>
                     </div>
@@ -150,7 +147,6 @@
                     </a>
                     <p>Call of Duty Black Ops 6</p>
                     </div>
-
                 </div>
             </section>
         </main>
@@ -158,7 +154,6 @@
         <aside class="lista-amigos">
             <div class="abrir-amigos" onclick="toggleListaAmigos()">
                 <h2>Amigos</h2>
-                <span class="abrir-icono">+</span>
             </div>
             <ul class="contenedor-amigos">
                 <li>
@@ -226,7 +221,7 @@
                 <img src="home/amigos/arian.jpg" alt="Arian Luzcak" class="foto-perfil">
                 <h2>Arian Luzcak</h2>
                 <p>este wn tiene mas de 9 horas diarias registradas en ChatGPT
-                    <br>Necesita ayuda...
+                    <br>...Necesita ayuda... <br> (es el de la foto)
                 </p>
             </div>
         </div>
@@ -261,7 +256,7 @@
             </div>
         </div>
     </div>
-        <script src="home/script.js"></script>
+        <script src="home/script.js" defer></script>
 </body>
 
 </html>

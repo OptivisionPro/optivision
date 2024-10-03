@@ -1,14 +1,14 @@
 /* Reglas generales */
 body {
-    margin: 0;
+    margin: 0; /* Elimina el margen por defecto */
     font-family: Arial, sans-serif;
-    background-color: #2C0D4E;
+    background-color: #2C0D4E; 
     color: #fff;
 }
 
 /* Contenedor */
 .contenedor {
-/* Basic dimensions and centering */
+    /* Basic dimensions and centering */
 width: 100%;
 height: 100%;
 display: flex;
@@ -42,66 +42,64 @@ animation: move 4s linear infinite;
 }
 }
 
-/* Barra lateral */
-.barra-lateral {
-    position:relative; 
-    top: -444px;
-    left: 1px;
-    width: 250px;
-    height: 500px;
-    background-color: #000000b7;
-    padding: 10px;
-    border-radius: 0 15px 15px 0;
-    border-style: groove;
-    border-color: #A10D90;
-   } .barra-lateral h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-} .barra-lateral nav ul {
-    list-style: none;
-    padding: 0;
-} .barra-lateral nav ul li {
-    margin-bottom: 10px;
-    border-style: double;
-    border: #A10D90;
-} .barra-lateral nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    background-color: #5B2686;
-    border-radius: 5px;
-    border-style: double;
-    border: #A10D90;
-} .barra-lateral nav ul li.premium a {
-    background: linear-gradient(to right, #edb443, #ffb31c);
-    color: #ffffff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.5s;
-    border-style: double;
-    border: #A10D90;
-} .barra-lateral nav ul li.premium:active {
-    transform: scale(0.95);
-    border-style: double;
-    border: #A10D90;
-}
+/*-------------------#MENU DE NAVEGACIÓN-----------------*/
 
-/* Barra de búsqueda */
-.barra-busqueda {
+.encabezado {
+    position: fixed; /* Posición fija */
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    padding: 0px 10%; /* Ajusta el padding */
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #3A0A64;
-} .barra-busqueda input {
-    flex-grow: 1;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+    justify-content: space-between; /* Espacio entre elementos */
+    z-index: 1000;
 }
 
-.barra-busqueda .notificaciones {
-    margin-left: 10px;
+.logo a{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navegacion ul{
+    list-style: none; /* Quita los puntos */
+}
+
+.encabezado .navegacion ul li{
+    float: left; /* Ajusta la posición */
+    position: relative; 
+} .encabezado .navegacion ul li:hover > ul{
+    display: initial;
+}
+
+
+.encabezado .navegacion ul li a{
+    font-size: 18px; 
+    color: #fff;
+    text-decoration: none; /* Quita el subrayado */
+    padding: 20px; 
+    display: block;
+} .encabezado .navegacion ul li a:hover{
+    background-color: #290846;
+    border-radius: 10px;
+}
+
+
+#toggle, .menu-boton{
+    display: none;
+}
+/*-------------------#PAGINA PRINCIPAL-----------------*/
+main {
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Noticias, música y juegos */
@@ -113,34 +111,28 @@ animation: move 4s linear infinite;
 .news-cards, .tarjetas-musica, .tarjetas-juego {
     display: flex;
     gap: 1%;
-    width: 90%;
     flex-wrap: wrap; /* Ajuste flexible en pantallas pequeñas */
 }
 
 /* Tarjetas */
-.news-card, .tarjeta-juego {
-    background-color: #5B2686;
+.news-card, .tarjeta-juego, .tarjeta-musica {
+    background-color: #430e6ebc;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
     flex: 1 1 200px; /* Flexibilidad en el tamaño de las tarjetas */
     margin-bottom: 10px; /* Espaciado entre tarjetas */
-}
-
-.tarjetas-musica {
-    background-color: #5B2686;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    flex: 1 1 150px; /* Ajusta la flexibilidad */
-    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(208, 0, 255, 0.766);
+} .news-card:hover, .tarjeta-juego:hover, .tarjeta-musica:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    gap: 5%;
 }
 
 /* Tamaños fijos para imágenes */
 .news-card img, .tarjetas-juego img, .tarjetas-musica img {
-    width: 100%;
+    width: 250px;
     height: 200px;
     border-radius: 5px;
     object-fit: cover;
@@ -152,7 +144,7 @@ animation: move 4s linear infinite;
     bottom: 0;
     right: 80px;
     width: 300px;
-    background-color: #1e0434d7;
+    backdrop-filter: blur(10px);
     border-radius: 15px 15px 0 0;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(208, 0, 255, 0.766);
@@ -160,19 +152,20 @@ animation: move 4s linear infinite;
 }
 
 .abrir-amigos {
-    background-color: #740ab692;
-    padding: 10px;
+    background-color: #29084681;
+    backdrop-filter: blur(5px);
+    padding: 5px;
     cursor: pointer;
     text-align: center;
     border-radius: 15px 15px 0 0;
 }
 
 .abrir-amigos h2 {
-    margin: 0;
-    color: #fff;
+    display: inline-block;
+    margin: 10px;
     font-size: 18px;
+    color: #fff;
 }
-
 .contenedor-amigos {
     display: none;
     padding: 10px;
@@ -198,7 +191,7 @@ animation: move 4s linear infinite;
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #5B2686;
+    background-color: #5b26866c;
     border-radius: 5px;
     margin-bottom: 10px;
     color: #fff;
@@ -247,7 +240,7 @@ animation: move 4s linear infinite;
 }
 
 
-
+/*-------------------#PERFIL DE AMIGOS-------------------*/
 /* Modal */
 .perfil {
     display: none;
@@ -256,7 +249,7 @@ animation: move 4s linear infinite;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.516);
 }
 
 .perfil:target {
@@ -273,14 +266,18 @@ animation: move 4s linear infinite;
 }
 
 .modal-content {
-    text-align: center;
-    width: 45%;
-    margin: 15% auto;
+    backdrop-filter: blur(10px);
     padding: 20px;
-    border: 1px solid #888;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    background-color: #0a0d64df;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    max-height: auto;
+    overflow:hidden;
+    text-align: center;
 }
 
 .close {
@@ -292,47 +289,65 @@ animation: move 4s linear infinite;
 }
 
 
-/* Responsive adjustments */
+
+/*-----------------------TELEFONOS---------------------------*/
 @media screen and (max-width: 1000px) {
     .contenedor {
-        flex-direction: column;
-        padding: 20px;
-        height: auto;
-
+        width: 100%;
     }
 
-    .barra-busqueda {
-        display: none;
+    #toggle:checked ~ .navegacion {
+        display: initial;
+    }    
+
+    .encabezado {
+        padding: 20px 10%;
     }
 
-    .barra-lateral {
+    .encabezado .navegacion {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 60%;
+        background-color: #160723ed;
         display: none;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    }
+    .encabezado label{
+        display: initial;
+    }
+
+    .encabezado .navegacion ul li{
+        width: 100%;
+        margin-bottom: 1px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .encabezado .navegacion ul li a{
+        padding: 8px 3px 8px 10%;
     }
 
     .news, .musica-recomendada, .top-juegos {
-        width: 90%;
-    }
-
-    .news-cards, .tarjetas-musica, .tarjetas-juego {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .news-card, .tarjeta-juego, .tarjetas-musica {
         width: 80%;
-        margin-bottom: 20px;
     }
 
     .modal-content {
-        width: 90%;
+        width: 85%;
     }
 
     .lista-amigos {
-        left: 0;
-        width: auto;
+        left: 10px;
+        max-height: 300px;
+        overflow-y: auto;
+
     }
 
     .abrir-amigos {
-        height: 30%;
+        height: 35px;
+    }
+
+    .abrir-amigos .boton-amigos {
+        font-size: 12px;
     }
 }
