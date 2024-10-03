@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
     <title>OptiVision</title>
     <link rel="stylesheet" href="home-styles.css">
+    <link rel="icono" href="assets/icono.ico">
 </head>
 
 <script id="chatBroEmbedCode">
@@ -78,13 +79,44 @@
             <section class="musica-recomendada" id="musica-recomendada">
                 <h2>Musica recomendada</h2>
                 <div class="tarjetas-musica">
-                    <div class="tarjeta-musica" onclick="playMusic('home/musica/get-lucky.mp3')">
+                    <div class="tarjeta-musica">
                         <img src="home/musica/get-lucky.jpeg" alt="Get Lucky - Daft Punk">
                         <p>Get Lucky <br>- Daft Punk</p>
+                        <audio id="audio" controls loop> 
+                            <source src="home/musica/get-lucky.mp3" type="audio/mp3">
+                        </audio>
                     </div>
-                    <div class="tarjeta-musica" onclick="playMusic('home/musica/tame-impala.mp3')">
-                        <img src="home/musica/tame-impala.jpeg" alt="New person same old mistakes - Tame Impala">
+
+                    <div class="tarjeta-musica">
+                        <img src="home/musica/tame-impala.jpeg" alt="Tame Impala">
                         <p>New person same old mistakes <br>- Tame Impala</p>
+                        <audio id="audio" controls loop> 
+                            <source src="home/musica/tame-impala.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+
+                    <div class="tarjeta-musica">
+                        <img src="home/musica/chau.jpg" alt="Tame Impala">
+                        <p>Chau <br>- No te va a gustar</p>
+                        <audio id="audio" controls loop> 
+                            <source src="https://rr2---sn-bg0s7n7d.googlevideo.com/videoplayback?expire=1727954313&ei=KSn-ZtHDCr-W4t4PovzuuAk&ip=59.178.250.80&id=o-AC1noc8osvLHRU2Quuy_EeGsmpcr-hPbCv1TMtkT19Z0&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AXLXGFQeZlQj5reHHNBKs23GJ3ZjHmqXbi-w8y-0RI4dhXkgTpAuqWn1zuCQPyDmURgMf5wQzKAMvp6G&spc=54MbxXKXXGFGIToz-MbqR2Ri78PeNwpG1J55GCPgzqOSbrFyLw&vprv=1&svpuc=1&mime=audio%2Fmp4&ns=Mic78fEe0JFK5R0R23XM_80Q&rqh=1&gir=yes&clen=4805624&dur=296.890&lmt=1726193516372488&keepalive=yes&fexp=51300761&c=WEB_CREATOR&sefc=1&txp=4532434&n=esee6LVSDCkDvw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhAOESF6CvKzpLxpc3d8TJIG1twX4jxak2bqy5uE2o7auuAiEA5-E1l8TCzUa8RLLiZu5anC_VVNXYzut3UViOMWU0i2E%3D&rm=sn-cnoa-a0il7e&rrc=79,80&req_id=5d15d4b19708a3ee&cmsv=e&met=1727932738,&rms=rdu,rdu&redirect_counter=2&cm2rm=sn-qxall7l&cms_redirect=yes&mh=bi&mip=181.209.86.243&mm=34&mn=sn-bg0s7n7d&ms=ltu&mt=1727932349&mv=m&mvi=2&pl=24&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ABPmVW0wRAIgQOaYcC0y4NzJDp1E-87HN0TJRbH7Zj8VemFWYNuQckcCICwIHezyN0GbrkLUYkRTN9yQSZJiantsGyPTrTJD_Y7i" type="audio/mp3">
+                        </audio>
+                    </div>
+
+                    <div class="tarjeta-musica">
+                        <img src="https://static.displate.com/1200x857/displate/2019-11-14/a056a1ec3a841817c29211d6a878d338_ad90ff004371b2991bbb1b331647dc56.jpg" alt="Tame Impala">
+                        <p>Elephant (Best Part loop)<br>- Tame Impala</p>
+                        <audio id="audio" controls loop> 
+                            <source src="home/musica/Elephant.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+
+                    <div class="tarjeta-musica">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/df/c1/53/dfc1534e-aa1e-466d-b34c-eb221ec4f09c/5059460163669.jpg/600x600bf-60.jpg" alt="Tame Impala">
+                        <p>Sh-Boom (Life Could Be A Dream) <br>- The Chords</p>
+                        <audio id="audio" controls loop> 
+                            <source src="https://rr5---sn-x1xe7n76.googlevideo.com/videoplayback?expire=1727955183&ei=jyz-ZuOwLc26rtoPoLSH8AE&ip=123.200.4.110&id=o-AKu3r_a9PrkxRCnm06RTan68EkokgtrVJvrPSK3SQi3l&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AXLXGFR9a7_GS00w2YM3ayR6mqV5FEFWuwVbbch3gfi9wbgnQGZqZFoG6HqwfxJIn7WVq4j9mojK1_A3&spc=54MbxdnmB_pwvirkprC_aRJV9oIN6QqKdOuDEsIK8ahoQ5QWoA&vprv=1&svpuc=1&mime=audio%2Fmp4&ns=04s2dUqc93sdyWJyKlgTXjgQ&rqh=1&gir=yes&clen=2354656&dur=145.449&lmt=1709222493806948&keepalive=yes&fexp=51300761&c=WEB_CREATOR&sefc=1&txp=5532434&n=fLbXP93l-TBALA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgfIh9MbY-g1La0n45aNlFzOAYR7WQiOklRgOyUmCCUMECIQCTiUTzD2-a5QI22HqnPQkeEH9BeVArhijzyrqLErFaGg%3D%3D&rm=sn-jtcxgb5ux-q5jl7l,sn-x5guiuxaxjvh-q5jk7l,sn-qxaey76&rrc=79,79,104&req_id=ddb057a33f5ba3ee&cmsv=e&met=1727933619,&rms=nxu,rdu&redirect_counter=3&cms_redirect=yes&ipbypass=yes&mh=Kr&mip=181.209.86.243&mm=30&mn=sn-x1xe7n76&ms=nxu&mt=1727933304&mv=m&mvi=5&pl=24&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ABPmVW0wRgIhAOEgcQo34ucxIPGzJAVtQmM9YmcucunQtkvwxPVj3QqBAiEA9FeTJ_TmPH5A1z-j-CXi_jMWoxRVRmhwup4ho16Xo4E%3D" type="audio/mp3">
+                        </audio>
                     </div>
                 </div>
             </section>

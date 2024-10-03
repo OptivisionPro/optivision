@@ -88,6 +88,14 @@ animation: move 4s linear infinite;
     border-radius: 10px;
 }
 
+.premium {
+    background-color: #f5e1081e;
+    border-radius: 10px;
+} .premium:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    gap: 5%;
+}
 
 #toggle, .menu-boton{
     display: none;
@@ -136,6 +144,11 @@ main {
     height: 200px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+/* Audios */
+audio::-webkit-media-controls-panel{
+    background-color: #740ad0;
 }
 
 /* Lista de amigos */
