@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #190032;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    cursor: url(https://i.ibb.co/KLYVTtz/S-D.png), auto;
+}
+a {
+    cursor: url(https://ibb.co/9VJyQx3), auto;
+}
+.container {
+    text-align: center;
+    max-width: 1200px;
+}
+h1 {
+    color: #ff50ea;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subtitulo {
+    font-size: 1.2em;
+    color: #d9d9d9;
+    margin-bottom: 30px;
+}
+
+.soporte {
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: #d9d9d9;
+}
+
+.planes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #2c003d;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+} .plan:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.plan.popular {
+    border: 3px solid #8a50ff;
+}
+.plan h2 {
+    color: #ff50ea;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+.precio {
+    font-size: 2.8em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+.precio span {
+    font-size: 0.5em;
+    color: #d9d9d9;
+}
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+ul li {
+    margin: 12px 0;
+    font-size: 1.1em;
+    color: #c4c4c4;
+}
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8b50ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.boton:hover {
+    background-color: #bf74ff;
+}
+
+.etiqueta-popular {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8b50ff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    
+}
