@@ -19,7 +19,8 @@
         .contenedor {
             display: flex;
             width: 50%;           
-            background-color: #00000033;
+            backdrop-filter: blur(10px);
+            background-color: #00000043;
             border-radius: 10%;
             box-shadow: 6px 8px 12px 0px rgba(0, 0, 0, 0.5);
             overflow: hidden;
@@ -49,7 +50,7 @@
         }
 
         .panel-izquierdo h1 {
-            color: #ff67c4;
+            color: #fe62c2;
             margin-bottom: 10px;
             text-align: center;
         }
@@ -58,6 +59,7 @@
             margin-bottom: 30px;
             justify-content: center;
             text-align: center;
+            font-size: 16px;
         }
 
         .panel-izquierdo input[type="email"],
@@ -66,11 +68,13 @@
             padding: 10px;
             margin: 10px 0;
             border-radius: 8px;
-            border: none;
+           border-style:groove;
+           border-color: #ff67c579;
             font-size: 16px;
-            background-color: #966dff39;
-            color: #fff;
-            border-style:initial;
+            background-color: #e912bb18;
+            color: #ff90ec;
+            border-radius: 8px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
         }
 
         .panel-izquierdo input[type="email"]:focus,
@@ -79,12 +83,16 @@
         }
 
         .panel-izquierdo input[type="checkbox"] {
-            margin-right: 10px;
+            margin-right: 5px;
+            margin-top: 5px;
         }
 
         .panel-izquierdo a {
             color: #ff67c4;
-            
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
         }
 
         .btn {
@@ -107,22 +115,6 @@
             display: flex;
             justify-content: center;
         }
-
-
-        .btn-registro {
-            width: 25%;
-            padding: 10px;
-            margin-top: 0px;
-            background-color: #f487ec77;
-            color: white;
-            border: none;
-            border-radius:100px;
-            cursor: pointer;
-            font-size: 15px;
-        } .btn-registro:hover {
-            background-color: #ffffff00;
-        }
-
 
         
         
