@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Simulado</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        #virus-message {
+            font-size: 20px;
+            margin-top: 30px;
+            animation: flicker 1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        #destruction-message {
+            display: none;
+        }
+
+        #destruction-gif {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Atención!</h1>
+    <p>Se ha detectado un virus en su sistema...</p>
+    <div id="virus-message">Iniciando autodestrucción del sistema en: <span id="timer">10</span> segundos</div>
+
+    <div id="destruction-message">
+        <h1>Sistema autodestruido</h1>
+        <img id="destruction-gif" src="https://c.tenor.com/x8v1oNUOmg4AAAAd/tenor.gif" alt="GIF de sistema destruido">
+    </div>
+
+    <script>
+        let countdown = 10;
+        const timerElement = document.getElementById('timer');
+        const virusMessage = document.getElementById('virus-message');
+        const destructionMessage = document.getElementById('destruction-message');
+
+        function updateTimer() {
+            countdown--;
+            if (countdown >= 0) {
+                timerElement.textContent = countdown;
+            } else {
+                virusMessage.style.display = 'none';
+                destructionMessage.style.display = 'block';
+            }
+        }
+
+        setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>
