@@ -1,0 +1,169 @@
+
+/* Reglas generales */
+body {
+  margin: 0; /* Elimina el margen por defecto */
+  font-family: Arial, sans-serif;
+  background-color: #2C0D4E; 
+  color: #fff;
+  cursor: url('https://i.ibb.co/TBz3GxC/cursor-2.png'), auto;
+}
+
+/* Aplica el cursor personalizado solo a enlaces */
+a {
+  cursor: url('https://i.ibb.co/TBz3GxC/cursor-2.png'), auto;
+}
+
+/* Contenedor */
+.contenedor {
+  /* Basic dimensions and centering */
+width: 100%;
+height: 100%;
+/* Dark mode colors and gradient */
+background: #121212; /* Fallback for browsers that don't support gradients */
+background: linear-gradient(
+135deg,
+#3A0A64 25%,
+#290846 25%,
+#290846 50%,
+#3A0A64 50%,
+#3A0A64 75%,
+#290846 75%,
+#290846
+);
+background-size: 40px 40px;
+
+/* Animation */
+animation: move 4s linear infinite;
+}
+
+@keyframes move {
+0% {
+background-position: 0 0;
+}
+100% {
+background-position: 40px 40px;
+}
+}
+
+
+.optimizacion-juegos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.contenido-izquierda {
+  max-width: 40%;
+  padding-right: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.contenido-izquierda h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #e50914; /* Rojo intenso estilo gamer */
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7); /* Sombra al texto */
+}
+
+.contenido-izquierda ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.8em;
+  margin-bottom: 40px;
+}
+
+.contenido-izquierda ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.contenido-izquierda ul li::before {
+  content: '🎮'; /* Icono gamer en la lista */
+  position: flex;
+  left: 0;
+  color: #e50914;
+}
+
+#start-play {
+  font-size: 1.5em;
+  padding: 10px 30px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición en hover */
+  box-shadow: 0px 5px 15px rgba(229, 9, 20, 0.6); /* Sombra roja */
+}
+
+#start-play:hover {
+  background-color: #ff6347;
+  transform: scale(1.1); /* Aumenta el tamaño en hover */
+}
+
+.contenido-derecha {
+  max-width: 50%;
+  padding: 0px;
+  display: block;
+}
+
+.contenido-derecha img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease; /* Transición en hover */
+}
+
+.contenido-derecha img:hover {
+  transform: scale(1.05); /* Aumenta el tamaño en hover */
+  z-index: 1;
+}
+
+.carousel-juegos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  body{
+    padding: 0px;
+  }
+  .optimizacion-juegos {
+    margin-top: -100px;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0;
+    margin-bottom: 20px;
+
+  }
+
+  .contenido-izquierda {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .contenido-izquierda h1 {
+    font-size: 2.5em;
+  }
+
+  .contenido-izquierda ul {
+    font-size: 1.2em;
+  }
+
+  
+}
