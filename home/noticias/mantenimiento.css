@@ -39,12 +39,68 @@ background-position: 40px 40px;
 }
 }
 
+.encabezado {
+  position: block; /* Posición fija */
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  padding: 0px 10%; /* Ajusta el padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre elementos */
+  z-index: 1000;
+}
+
+.logo a{
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navegacion ul{
+  list-style: none; /* Quita los puntos */
+}
+
+.encabezado .navegacion ul li{
+  float: left; /* Ajusta la posición */
+  position: relative; 
+} .encabezado .navegacion ul li:hover > ul{
+  display: initial;
+}
+
+
+.encabezado .navegacion ul li a{
+  font-size: 18px; 
+  color: #fff;
+  text-decoration: none; /* Quita el subrayado */
+  padding: 20px; 
+  display: block;
+} .encabezado .navegacion ul li a:hover{
+  background-color: #290846;
+  border-radius: 10px;
+}
+
+.premium {
+  background-color: #f5e1081e;
+  border-radius: 10px;
+} .premium:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  gap: 5%;
+}
+
+#toggle, .menu-boton{
+  display: none;
+}
 
 .optimizacion-juegos {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -59,7 +115,7 @@ background-position: 40px 40px;
 .contenido-izquierda h1 {
   font-size: 3.5em;
   margin-bottom: 20px;
-  color: #e50914; /* Rojo intenso estilo gamer */
+  color: #27c2e4; 
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7); /* Sombra al texto */
 }
 
@@ -86,17 +142,17 @@ background-position: 40px 40px;
 #start-play {
   font-size: 1.5em;
   padding: 10px 30px;
-  background-color: #ff4500;
+  background-color:  #519aee;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transición en hover */
-  box-shadow: 0px 5px 15px rgba(229, 9, 20, 0.6); /* Sombra roja */
+  box-shadow: 0px 5px 15px rgba(9, 97, 229, 0.6); /* Sombra roja */
 }
 
 #start-play:hover {
-  background-color: #ff6347;
+  background-color: #47c2ff;
   transform: scale(1.1); /* Aumenta el tamaño en hover */
 }
 
@@ -129,10 +185,21 @@ background-position: 40px 40px;
 }
 
 /* Estilos responsivos */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   body{
     padding: 0px;
   }
+
+.encabezado {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.encabezado .navegacion{
+    display: none;
+}
+
   .optimizacion-juegos {
     margin-top: -100px;
     flex-direction: column;

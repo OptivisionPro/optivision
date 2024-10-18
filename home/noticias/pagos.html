@@ -6,23 +6,29 @@
     <title>Planes de Suscripción</title>
     <style>
         /* Reglas generales */
-body {
-    margin: 0; /* Elimina el margen por defecto */
-    font-family: Arial, sans-serif;
-    background-color: #2C0D4E; 
-    color: #fff;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2C0D4E;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Evita el scroll cuando se muestre el mensaje de confirmación */
+        }
+
+        /* Estilo para el formulario de pago */
         .payment-form {
             background-color: rgba(53, 13, 147, 0.208);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 500px;
-            margin: auto;
-            margin-top: 10%;
             text-align: center;
-            align-items: center;
+            z-index: 10;
         }
+
         input[type="text"], input[type="number"], input[type="month"] {
             width: 90%;
             padding: 10px;
@@ -30,6 +36,7 @@ body {
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
         input[type="submit"] {
             width: 90%;
             padding: 10px;
@@ -39,7 +46,49 @@ body {
             border-radius: 5px;
             cursor: pointer;
         }
+
         input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Estilo para el mensaje de confirmación */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            backdrop-filter: blur(10px);
+        }
+
+        .confirmation-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            color: #000;
+        }
+
+        .confirmation-box h2 {
+            color: #28a745;
+        }
+
+        .confirmation-box button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .confirmation-box button:hover {
             background-color: #218838;
         }
     </style>
@@ -67,12 +116,16 @@ body {
         </form>
     </div>
 
-    <script>
-        function showPaymentForm(plan) {
-            document.getElementById('plan-seleccionado').value = plan;
-            document.getElementById('payment-form').style.display = 'block';
-        }
+    <!-- Mensaje de confirmación -->
+    <div class="overlay" id="confirmation-overlay">
+        <div class="confirmation-box">
+            <h2>Pago Procesado con Éxito</h2>
+            <p>Gracias por tu compra.</p>
+            <button onclick="location.href='/home.html'">Volver</button>
+        </div>
+    </div>
 
+    <script>
         function validateForm() {
             const tarjeta = document.getElementById('num-tarjeta').value;
             const cvv = document.getElementById('cvv').value;
@@ -98,9 +151,9 @@ body {
                 return false;
             }
 
-            // Si todo es válido
-            alert('Pago procesado con éxito.');
-            return true;
+            // Mostrar el mensaje de confirmación
+            document.getElementById('confirmation-overlay').style.display = 'flex';
+            return false; // Evitar que se envíe el formulario
         }
     </script>
 

@@ -14,14 +14,71 @@ body {
     padding: 20px;
 }
 .container {
+    width: 100%;
+    align-items: center;
     text-align: center;
-    max-width: 1200px;
 }
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #2c003d;
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+}
+
+.logo a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navegacion ul {
+    list-style: none; 
+    display: flex;
+}
+
+.navegacion ul li {
+    margin-left: 15px; /* Ajuste de espacio entre elementos */
+    position: relative;
+}
+
+.navegacion ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+.navegacion ul li a:hover {
+    background-color: #290846;
+}
+
+.premium {
+    background-color: #f5e1081e;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.premium:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
 h1 {
     color: #ff50ea;
     font-size: 2.5em;
     margin-bottom: 10px;
+    margin-top: 60px; /* Para evitar que se superponga con el encabezado */
 }
+
 .subtitulo {
     font-size: 1.2em;
     color: #d9d9d9;
@@ -48,8 +105,9 @@ h1 {
     width: 300px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    position: flex;
-} .plan:hover {
+}
+
+.plan:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
@@ -57,30 +115,36 @@ h1 {
 .plan.popular {
     border: 3px solid #8a50ff;
 }
+
 .plan h2 {
     color: #ff50ea;
     font-size: 1.8em;
     margin-bottom: 15px;
 }
+
 .precio {
     font-size: 2.8em;
     margin: 10px 0;
     color: #ffffff;
 }
+
 .precio span {
     font-size: 0.5em;
     color: #d9d9d9;
 }
+
 ul {
     list-style-type: none;
     margin: 20px 0;
     padding: 0;
 }
+
 ul li {
     margin: 12px 0;
     font-size: 1.1em;
     color: #c4c4c4;
 }
+
 .boton {
     display: inline-block;
     padding: 12px 25px;
@@ -92,6 +156,7 @@ ul li {
     margin-top: 15px;
     transition: background-color 0.3s ease;
 }
+
 .boton:hover {
     background-color: #bf74ff;
 }
@@ -108,20 +173,27 @@ ul li {
     font-size: 0.9em;
     font-weight: bold;
 }
-@media screen and (max-width: 1000px) {
-    body{
-        padding: 0;
 
+@media screen and (max-width: 1000px) {
+    .encabezado {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
     }
 
-    .planes{
-        display: flex;
+    .navegacion {
+        display: none;
+    }
+
+    .planes {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 30px;
-        margin: 0;
-        padding: 0;
         width: 100%;
+    }
+
+    .plan {
+        width: 90%;
     }
 }

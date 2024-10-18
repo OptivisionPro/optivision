@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, blue, rgb(141,55,199));;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            color: white;
+            background-color: #6f00ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgb(0, 0, 0);
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input, textarea[type="text"], input[type="email"] {
+            margin: -7px;
+            border-style: inherit;
+            padding: 7px;
+            margin-bottom: 20px;
+            border: 1px solid #ff00f2;
+            border-radius: 5px;
+            width: 100%;
+            background: rgba(196, 36, 196, 0.4);
+            color: white;
+        }
+        input:focus {
+            outline: solid violet;
+        }
+        #mensaje {
+            resize: none;
+            overflow: hidden;
+            min-height: 60px;
+            max-height: 300px;
+            background: rgba(196, 36, 196, 0.4);
+            border: 1px solid #ff00f2;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            margin-bottom: 20px;
+            width: 96%;
+        }
+        button {
+            padding: 10px;
+            background-color: #4391da;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00ffea;
+        }
+        .message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            text-align: center;
+            color: #6f00ff;
+        }
+        .blurred {
+            filter: blur(5px);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="feedbackContainer">
+    <h1>Deja tu Feedback</h1>
+    <form id="feedbackForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="1" required maxlength="500" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <div class="char-count" id="charCount">0 / 500 letras</div>
+        <button type="submit">Enviar Feedback</button>
+    </form>
+</div>
+
+<div class="message" id="thankYouMessage">
+    <h2>Gracias por su colaboración</h2>
+    <button onclick="location.href='/home.html'">Volver</button>
+</div>
+
+<script>
+    // Expande el textarea a medida que se escribe
+    const mensaje = document.getElementById('mensaje');
+    const charCount = document.getElementById('charCount');
+    
+    mensaje.addEventListener('input', function() {
+        mensaje.style.height = 'auto';  // Resetea el tamaño antes de calcular el nuevo
+        mensaje.style.height = mensaje.scrollHeight + 'px';  // Ajusta la altura al contenido
+        charCount.textContent = mensaje.value.length + " / 500"; // Actualiza el contador de caracteres
+    });
+
+    // Mostrar mensaje de agradecimiento y desenfoque
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita la recarga de la página
+
+        // Desenfoca el fondo y muestra el mensaje de agradecimiento
+        document.getElementById('feedbackContainer').classList.add('blurred');
+        document.getElementById('thankYouMessage').style.display = 'block';
+        
+    });
+</script>
+
+</body>
+</html>
