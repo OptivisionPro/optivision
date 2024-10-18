@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     cursor: url(https://i.ibb.co/KLYVTtz/S-D.png), auto;
 }
@@ -52,7 +52,7 @@ h1 {
     width: 300px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    position: relative;
+    position: flex;
 } .plan:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
@@ -113,5 +113,12 @@ ul li {
     font-weight: bold;
 }
 @media screen and (max-width: 1000px) {
-    
+    body{
+        padding: 0;
+
+    }
+
+    .planes{
+        display: flex;
+    }
 }
