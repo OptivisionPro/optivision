@@ -4,12 +4,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #2C0D4E; 
     color: #fff;
-    cursor: url('https://i.ibb.co/TBz3GxC/cursor-2.png'), auto;
-}
-
-/* Aplica el cursor personalizado solo a enlaces */
-a {
-    cursor: url('https://i.ibb.co/TBz3GxC/cursor-2.png'), auto;
 }
 
 /* Contenedor */
@@ -120,7 +114,6 @@ main {
 .news, .musica-recomendada, .top-juegos {
     padding: 10px;
     width: 80%;
-    cursor: url('https://i.ibb.co/TBz3GxC/cursor-2.png'), auto;;
 }
 
 .news-cards, .tarjetas-musica, .tarjetas-juego {
@@ -140,7 +133,6 @@ main {
     margin-bottom: 10px; /* Espaciado entre tarjetas */
     box-shadow: 0 4px 8px rgba(208, 0, 255, 0.766);
 } .news-card:hover, .tarjeta-juego:hover, .tarjeta-musica:hover {
-    cursor: url('https://i.ibb.co/yRYwH3R/POINTER-1.png'), pointer;
     transform: scale(1.05);
     transition: transform 0.3s;
     gap: 5%;
@@ -152,13 +144,11 @@ main {
     height: 200px;
     border-radius: 5px;
     object-fit: cover;
-    cursor: url('https://i.ibb.co/yRYwH3R/POINTER-1.png'), pointer;
 }
 
 /* Audios */
 audio::-webkit-media-controls-panel{
     background-color: #740ad0;
-    cursor: url('https://i.ibb.co/yRYwH3R/POINTER-1.png'), pointer;
 }
 
 /* Lista de amigos */

@@ -12,10 +12,6 @@ body {
     align-items: center;
     height: 100%;
     padding: 20px;
-    cursor: url(https://i.ibb.co/KLYVTtz/S-D.png), auto;
-}
-a {
-    cursor: url(https://ibb.co/9VJyQx3), auto;
 }
 .container {
     text-align: center;
@@ -120,5 +116,12 @@ ul li {
 
     .planes{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 }
